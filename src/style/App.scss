@@ -1,0 +1,31 @@
+// 定义侧边栏宽带
+$asideWith: 300px;
+// 统一的外边距
+$margin: 30px;
+
+// App style
+.app {
+  height: 100%;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+.main {
+  height: 100%;
+  display: flex;
+}
+
+.aside {
+  width: $asideWith;
+  height: 100%;
+  background-color: rgba(0,0,0,.05);
+
+}
+
+.page {
+  flex: 1;
+  border: 1px solid chartreuse;
+  height: 100%;
+  margin-left: $margin;
+}

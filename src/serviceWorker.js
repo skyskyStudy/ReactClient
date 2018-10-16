@@ -1,3 +1,8 @@
+/*
+* sky注释，据说是为了保证离线访问的
+* */
+
+
 // This optional code is used to register a service worker.
 // register() is not called by default.
 
