@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import './style/App.scss';
 
 // 引入组件
@@ -8,7 +8,16 @@ import Broadside from './components/Broadside'
 // 引入页面
 import Pv from './views/Pv'
 
-class App extends Component {
+const initialState = { count: 0 };
+type State = Readonly<typeof initialState>;
+
+class App extends Component<object, State> {
+  constructor(props) {
+    super(props);
+
+  }
+
+  state: State = initialState;
 
   render() {
     return (

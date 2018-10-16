@@ -53,6 +53,8 @@
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
     "terser-webpack-plugin": "1.1.0",
+    "ts-loader": "^5.2.2",
+    "tslib": "^1.9.3",
     "url-loader": "1.1.1",
     "webpack": "4.19.1",
     "webpack-dev-server": "3.1.9",
@@ -101,12 +103,17 @@
       "json",
       "web.jsx",
       "jsx",
-      "node"
+      "node",
+      "tsx"
     ]
   },
   "babel": {
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "typescript": "^3.1.3"
   }
 }

@@ -1,0 +1,52 @@
+{
+  "extends": "tslint-config-standard",
+  "globals": {
+    "require": true
+  },
+  "rules": {
+    "no-parameter-properties":false, // 禁止给类的构造函数的参数添加修饰符
+    "triple-equals":false,
+    "no-debugger": false,
+    // 禁止行尾有空格
+    "no-trailing-whitespace": false,
+    // 空格在其他部分的设置,whitespace这一项决定了在哪些情况下必须先插入空格
+    "whitespace": [
+      false,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
+    //  引用规范
+    "quotemark": false,
+    // const偏好,量没有在程序段中重新赋值的时候提示使用const，这么做可以优化性能
+    "prefer-const": false,
+    "member-ordering":false,
+    "no-this-assignment": [true, {"allowed-names": ["^self$","^that$"], "allow-destructuring": true}],
+    // 必须使用箭头函数，除非是单独的函数声明或是命名函数
+    "only-arrow-functions": [
+      false,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
+    // 禁止出现空代码块，允许 catch 是空代码块
+    "no-empty": [
+      false,
+      "allow-empty-catch"
+    ],
+    // 禁止无用的类型断言
+    "no-unnecessary-type-assertion": false,
+    // 使用 return; 而不是 return undefined;
+    "return-undefined": false,
+    // 禁止对 array 使用 for in 循环
+    "no-for-in-array": false,
+    "comment-format": [
+      true,
+      "check-space"
+    ] // 单行注释格式化规则
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ]
+}

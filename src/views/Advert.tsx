@@ -3,6 +3,12 @@
 import React from 'react'
 
 class Advert extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+  }
 
 }
 
