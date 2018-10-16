@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import './style/App.scss';
 
+import { Router, Route, Link } from 'react-router'
+
 // 引入组件
 import Header from './components/Header'
 import Broadside from './components/Broadside'
 
 // 引入页面
-import Pv from './views/Pv'
+import PV from './views/PV'
 
 const initialState = { count: 0 };
 type State = Readonly<typeof initialState>;
@@ -35,7 +37,7 @@ class App extends Component<object, State> {
 
           {/* 跳转的页面 */}
           <div className="page">
-            <Pv />
+            <PV />
           </div>
         </div>
       </div>

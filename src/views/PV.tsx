@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Pv extends React.Component {
+class PV extends React.Component {
 
   render () {
     return (
@@ -11,4 +11,4 @@ class Pv extends React.Component {
   }
 }
 
-export default Pv
+export default PV
